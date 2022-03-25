@@ -1,0 +1,20 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #48d8a1;
+    padding: 10px 15px;
+    color: white;
+}
+.header span{
+    color: #e46030;
+}
+.header a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: white;
+    font-size: 18px;
+}
+.header a:hover {
+    color: #e46030;
+}
