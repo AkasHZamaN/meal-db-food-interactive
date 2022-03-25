@@ -4,12 +4,19 @@ import './Shop.css';
 
 const Shop = () => {
     const [meals, setMeals] = useState([]);
+    const [foodCart, setFoodCart] = useState([]);
 
     useEffect( () => {
         fetch(`data.json`)
         .then(res => res.json())
         .then(data => setMeals(data))
     }, []);
+
+    const addToCart = (meal) => {
+        console.log(meal);
+        const newFoodCart = [...foodCart, meal];
+        setFoodCart(newFoodCart);
+    }
 
     return (
         <div className='shop-container'>   
@@ -18,11 +25,13 @@ const Shop = () => {
                     meals.map(meal => <Meal 
                     key = {meal.idMeal}
                     meal = {meal}
+                    addToCart = {addToCart}
                     ></Meal>)
                 }
             </div>
             <div className="cart-container">
-                <h4>this is cart container</h4>
+                <h3>Food Cart</h3>
+                <p>selected items: {foodCart.length}</p>
             </div>
         </div>
     );

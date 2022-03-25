@@ -3,8 +3,9 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import React from 'react';
 import './Meal.css';
 
-const Meal = (props) => {
-    const { strMealThumb, strMeal, strPrice, strCategory, idMeal } = props.meal;
+const Meal = ({meal, addToCart}) => {
+    // const {meal, addToCart} = props;
+    const { strMealThumb, strMeal, strPrice, strCategory, idMeal } = meal;
     return (
         <div className='meal-item'>
             <img src={strMealThumb} alt="" />
@@ -14,7 +15,7 @@ const Meal = (props) => {
                 <p>Category: {strCategory}</p>
                 <p>{idMeal}</p>
             </div>
-            <button className='cart-btn'>
+            <button onClick={() => addToCart(meal)} className='cart-btn'>
                 <p className='btn-text'>Add To Cart</p>
                 <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
             </button>
