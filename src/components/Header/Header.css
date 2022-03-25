@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 .header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: 'Fredoka One', cursive;
     background-color: #48d8a1;
-    padding: 10px 15px;
+    padding: 10px 55px;
     color: white;
 }
 .header span{
@@ -11,10 +13,11 @@
 }
 .header a {
     text-decoration: none;
-    margin-right: 10px;
+    margin-right: 20px;
     color: white;
     font-size: 18px;
 }
 .header a:hover {
     color: #e46030;
+    letter-spacing: 2px;
 }
