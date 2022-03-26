@@ -2,8 +2,35 @@
     position: sticky;
     top: 0;
 }
+.cart-sub-title{
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+}
 .food-name{
     font-family: lato;
-    margin-top: 50px;
     margin-left: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.btn-items{
+    text-align: center;
+}
+.select-btn{
+    color: white;
+    font-weight: 700;
+    margin-right: 5px;
+    font-size: 15px;
+    background-color: #48d8a1;
+    border: none;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+.remove-btn{
+    border: none;
+    font-weight: 700;
+    color: white;
+    background-color: #48d8a1;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 0 10px;
 }

@@ -13,7 +13,7 @@ const Meal = ({meal, addToCart}) => {
                 <h3 className='meal-name'>{strMeal}</h3>
                 <p>Price: ${strPrice}</p>
                 <p>Category: {strCategory}</p>
-                <p>{idMeal}</p>
+                <p><small>{idMeal}</small></p>
             </div>
             <button onClick={() => addToCart(meal)} className='cart-btn'>
                 <p className='btn-text'>Add To Cart</p>

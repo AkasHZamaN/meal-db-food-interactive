@@ -16,11 +16,19 @@ const Cart = (props) => {
             <h3>Food <span>CarT</span></h3>
             <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
             </div>
-                <p>Selected items: {foodCart.length}</p>
+                <p className='cart-sub-title'>Selected <span>fOOd</span> Items</p>
                 <div className='food-name'>
                 {
                     foodCart.map(food => <p key={food.idMeal}>{food.strMeal}</p>)
                 }
+                </div>
+                <div className='btn-items'>
+                    <button className='select-btn'>
+                        <p>Select One</p>
+                    </button>
+                    <button className='remove-btn'>
+                        <p>Remove Items</p>
+                    </button>
                 </div>
         </div>
     );
