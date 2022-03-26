@@ -22,10 +22,14 @@
     letter-spacing: 2px;
 }
 
- @media screen and (max-width:411px) {
+ @media screen and (max-width:620px) {
     .header{
+        width: auto;
+        font-size: 10px;
+    }
+    .header h3{
         width: 100%;
-        font-size: 5%;
+        margin: auto;
     }
      
 } 
