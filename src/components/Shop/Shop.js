@@ -18,6 +18,16 @@ const Shop = () => {
         setFoodCart(newFoodCart);
     }
 
+    const removeItems = () => {
+    setFoodCart([])  
+    }
+
+    const selectOneItem = () => {
+        const foodItems = Math.floor(Math.random() * foodCart.length)
+        const takeOneItem = foodCart.find((food, index) => index === foodItems)
+        setFoodCart([takeOneItem])
+    }
+
     return (
         <div className='shop-container'>   
             <div className="meals-container">
@@ -30,7 +40,7 @@ const Shop = () => {
                 }
             </div>
             <div className="cart-container">
-                <Cart foodCart={foodCart}></Cart>
+                <Cart foodCart = {foodCart} removeItems={removeItems} selectOneItem={selectOneItem} ></Cart>
             </div>
         </div>
     );

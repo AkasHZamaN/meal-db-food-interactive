@@ -5,7 +5,7 @@
     justify-content: space-between;
     font-family: 'Fredoka One', cursive;
     background-color: #48d8a1;
-    padding: 10px 55px;
+    padding: 10px 25px;
     color: white;
 }
 .header span{
@@ -21,3 +21,11 @@
     color: #e46030;
     letter-spacing: 2px;
 }
+
+ @media screen and (max-width:411px) {
+    .header{
+        width: 100%;
+        font-size: 5%;
+    }
+     
+} 

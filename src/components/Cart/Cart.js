@@ -4,11 +4,8 @@ import React from 'react';
 import './Cart.css';
 
 const Cart = (props) => {
-    const {foodCart} = props;
 
-    // console.log(foodCart);
-        
-    
+    const {foodCart, removeItems, selectOneItem} = props;
 
     return (
         <div className='cart'>
@@ -19,14 +16,15 @@ const Cart = (props) => {
                 <p className='cart-sub-title'>Selected <span>fOOd</span> Items</p>
                 <div className='food-name'>
                 {
-                    foodCart.map(food => <p key={food.idMeal}>{food.strMeal}</p>)
+                    foodCart.map(food => <p 
+                        key={food.idMeal}>{food.strMeal}</p>)
                 }
                 </div>
                 <div className='btn-items'>
-                    <button className='select-btn'>
+                    <button onClick={selectOneItem} className='select-btn'>
                         <p>Select One</p>
                     </button>
-                    <button className='remove-btn'>
+                    <button onClick={removeItems} className='remove-btn'>
                         <p>Remove Items</p>
                     </button>
                 </div>

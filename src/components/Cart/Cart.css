@@ -19,11 +19,13 @@
     color: white;
     font-weight: 700;
     margin-right: 5px;
+    margin-bottom: 5px;
     font-size: 15px;
     background-color: #48d8a1;
     border: none;
     border-radius: 5px;
     padding: 0 15px;
+    cursor: pointer;
 }
 .remove-btn{
     border: none;
@@ -33,4 +35,9 @@
     font-size: 15px;
     border-radius: 5px;
     padding: 0 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:411px) {
+    
 }
