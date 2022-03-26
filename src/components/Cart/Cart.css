@@ -1,0 +1,9 @@
+.cart{
+    position: sticky;
+    top: 0;
+}
+.food-name{
+    font-family: lato;
+    margin-top: 50px;
+    margin-left: 5px;
+}
